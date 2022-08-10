@@ -15,7 +15,7 @@ def send_msg_from_twilio(request):
             to='Enter Your Phone no Here'
         )
         print(message.sid)
-        return HttpResponse('Message Send Successfully123.')
+        return HttpResponse('Message Send Successfully.')
     except Exception as e:
         return HttpResponse('Unable to send message.')
 
